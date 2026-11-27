@@ -5,7 +5,7 @@ create table if not exists public.courses (
   lesson_count int not null check (lesson_count > 0)
 );
 insert into public.courses (id, lesson_count) values
-  ('python', 6), ('javascript', 5), ('c', 5), ('rust', 5), ('lua', 4), ('elixir', 4)
+  ('python', 6), ('javascript', 5), ('c', 5), ('rust', 5), ('lua', 4), ('elixir', 4), ('ai-basics', 4)
 on conflict (id) do update set lesson_count = excluded.lesson_count;
 
 create table if not exists public.progress (
