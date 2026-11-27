@@ -115,3 +115,17 @@ pre.code { background: #0f172a; color: #e2e8f0; border-radius: 12px; }
 @media (max-width: 820px) { .hero-wrap { grid-template-columns: 1fr; } .hero-h { font-size: 32px; } .hero-art { order: -1; } .band h2 { font-size: 24px; } }
 @media print { .site-footer { display: none !important; } body { background: #fff; } }
 @media (max-width: 520px) { .header-in { padding: 8px 12px; gap: 6px; } .site-header nav { gap: 2px; flex-wrap: nowrap; } .site-header nav a:not(.btn) { padding: 0 6px; font-size: 14px; } .brand { font-size: 17px; gap: 6px; } .logo { width: 28px; height: 28px; border-radius: 8px; } .btn.sm { padding: 2px 10px; } .chip { padding: 2px 10px; min-height: 32px; font-size: 13px; } }
+
+/* ===== v3: AI section and plans ===== */
+.band.alt { background: linear-gradient(135deg, #0f766e, #1d4ed8); }
+.tracks { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 16px; }
+.track { background: #fff; border: 1px solid var(--hair); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 6px; }
+.tag { align-self: flex-start; font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 999px; background: #e0f2f1; color: var(--brand2); }
+.tag.soon { background: #fef3c7; color: #92400e; }
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 20px; }
+.plan { background: #fff; border: 1px solid var(--hair); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 8px; }
+.plan.hl { border: 2px solid var(--brand); }
+.plan .price { font-size: 30px; font-weight: 800; }
+.plan ul { padding-inline-start: 18px; margin: 4px 0 12px; flex: 1; }
+.tbl { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--hair); border-radius: 8px; }
+.tbl th, .tbl td { padding: 8px 12px; text-align: start; border-bottom: 1px solid var(--hair); font-size: 14px; }

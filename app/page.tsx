@@ -43,6 +43,13 @@ export default function Home() {
         <div className="grid">{courses.map((c) => <CourseCard key={c.id} c={c} />)}</div>
       </section>
 
+      <section className="band alt">
+        <h2>{ar ? 'قسم الذكاء الاصطناعي' : 'The AI section'}</h2>
+        <p>{ar ? 'تعلم الذكاء الاصطناعي بالعربي: من الأساسيات لحد استخدامه في شغلك.' : 'Learn AI in Arabic, from the basics to using it in your work.'}</p>
+        <Link className="btn lg light" href="/ai">{ar ? 'ادخل القسم' : 'Open the section'}</Link>
+        <Link className="btn lg light" href="/pricing" style={{ marginInlineStart: 8 }}>{ar ? 'الخطط' : 'Plans'}</Link>
+      </section>
+
       <section>
         <h2>{t('how')}</h2>
         <div className="steps">
