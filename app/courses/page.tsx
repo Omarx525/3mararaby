@@ -6,10 +6,10 @@ import CourseCard from '@/components/CourseCard';
 
 export default function Courses() {
   const { t, lang } = useLang();
-  const [f, setF] = useState<'all' | 'known' | 'rare'>('all');
+  const [f, setF] = useState<'all' | 'known' | 'rare' | 'ai'>('all');
   const ar = lang === 'ar';
   const list = courses.filter((c) => f === 'all' || c.kind === f);
-  const opts: ['all' | 'known' | 'rare', string][] = [['all', ar ? 'الكل' : 'All'], ['known', t('known')], ['rare', t('rare')]];
+  const opts: ['all' | 'known' | 'rare' | 'ai', string][] = [['all', ar ? 'الكل' : 'All'], ['known', t('known')], ['rare', t('rare')], ['ai', t('ai')]];
   return (
     <>
       <h1>{t('courses')}</h1>
