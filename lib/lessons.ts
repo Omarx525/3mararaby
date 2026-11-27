@@ -90,7 +90,21 @@ const elixir: Lesson[] = [
       'IO.puts(Enum.sum([1, 2, 3]))', 'كام هيتطبع؟', 'What prints?', ['3', '5', '6', '123'], 2),
 ];
 
-export const lessonsByCourse: Record<string, Lesson[]> = { python, javascript, c, rust, lua, elixir };
+const ai: Lesson[] = [
+  L(['الذكاء الاصطناعي برنامج بيتعلم من أمثلة كتير بدل ما حد يكتبله كل خطوة.', 'مثال: بدل ما نكتب قواعد لكل صورة قطة، بنوريه آلاف الصور لحد ما يتعرف عليها.'],
+    ['AI is software that learns from many examples instead of someone writing every step.', 'Instead of writing rules for every cat photo, we show it thousands of photos until it recognizes them.'],
+    '# فكرة مبسطة\nأمثلة + تدريب = نموذج بيتوقع', 'أي وصف أقرب للذكاء الاصطناعي؟', 'Which description is closest to AI?', ['برنامج بيتعلم من أمثلة', 'إنسان مختبي جوه الجهاز', 'قاعدة بيانات بس', 'فيروس'], 0),
+  L(['النموذج بيشوف أمثلة، بيتوقع، وبعدين بيتصحح لما يغلط. بيكرر ده ملايين المرات.', 'جودة الأمثلة مهمة: أمثلة غلط بتطلع نموذج غلط.'],
+    ['A model looks at examples, predicts, then corrects itself when wrong, repeated millions of times.', 'Example quality matters: bad examples make a bad model.'],
+    '# حلقة التعلم\nتوقع -> قارن بالإجابة -> صحح', 'لو الأمثلة غلط، النتيجة غالبا:', 'If the examples are wrong, the result is usually:', ['نموذج غلط', 'نموذج أذكى', 'مفيش فرق', 'أسرع'], 0),
+  L(['الأمر الواضح بيجيب نتيجة أحسن. قول المطلوب، السياق، والشكل اللي عايزه للإجابة.', 'جرب تقول: "اشرحلي الحلقات في بايثون لمبتدئ في خمس جمل مع مثال".'],
+    ['A clear prompt gives a better result. State the task, the context, and the format you want.', 'Try: "Explain loops in Python to a beginner in five sentences with an example."'],
+    'المطلوب: اشرح الحلقات\nالسياق: مبتدئ\nالشكل: خمس جمل + مثال', 'أي أمر أوضح؟', 'Which prompt is clearer?', ['اشرح الحلقات لمبتدئ في 5 جمل مع مثال', 'قولي حاجة', 'برمجة', 'اشرح'], 0),
+  L(['الذكاء الاصطناعي ممكن يغلط ويألف معلومات بثقة. راجع أي حاجة مهمة من مصدر تاني.', 'ما تكتبش فيه كلمات سر أو بيانات بنك أو أي أسرار.'],
+    ['AI can be wrong and invent facts with confidence. Check anything important elsewhere.', 'Never type passwords, bank details or secrets into it.'],
+    '# قاعدة بسيطة\nراجع المهم · ما تشاركش أسرار', 'إيه اللي ما تكتبوش لأداة ذكاء اصطناعي؟', 'What should you never type into an AI tool?', ['كلمة السر', 'سؤال عن درس', 'اسم لغة برمجة', 'طلب ملخص'], 0),
+];
+export const lessonsByCourse: Record<string, Lesson[]> = { python, javascript, c, rust, lua, elixir, 'ai-basics': ai };
 
 export type Ex = { ar: string; en: string; code: string; answer: string };
 export const exercises: Record<string, Record<number, Ex>> = {

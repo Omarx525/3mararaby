@@ -1,5 +1,5 @@
 export type Course = {
-  id: string; ar: string; en: string; kind: 'known' | 'rare'; level: 'beginner' | 'intermediate';
+  id: string; ar: string; en: string; kind: 'known' | 'rare' | 'ai'; level: 'beginner' | 'intermediate';
   hours: number; descAr: string; descEn: string; lessons: [string, string][];
 };
 
@@ -16,6 +16,8 @@ export const courses: Course[] = [
     lessons: [['الأساسيات', 'Basics'], ['الجداول', 'Tables'], ['الدوال', 'Functions'], ['مشروع صغير', 'Mini project']] },
   { id: 'elixir', ar: 'إليكسير', en: 'Elixir', kind: 'rare', level: 'intermediate', hours: 6, descAr: 'برمجة وظيفية لأنظمة كبيرة.', descEn: 'Functional programming for large systems.',
     lessons: [['الأساسيات', 'Basics'], ['مطابقة الأنماط', 'Pattern matching'], ['العمليات', 'Processes'], ['مشروع صغير', 'Mini project']] },
+  { id: 'ai-basics', ar: 'الذكاء الاصطناعي من الصفر', en: 'AI from scratch', kind: 'ai', level: 'beginner', hours: 3, descAr: 'افهم الذكاء الاصطناعي واستخدمه صح وبأمان.', descEn: 'Understand AI and use it well and safely.',
+    lessons: [['يعني إيه ذكاء اصطناعي', 'What AI actually is'], ['إزاي بيتعلم', 'How it learns'], ['اكتب أوامر كويسة', 'Writing good prompts'], ['استخدمه بأمان', 'Using it safely']] },
 ];
 
 export const getCourse = (id: string) => courses.find((c) => c.id === id);

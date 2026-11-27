@@ -5,4 +5,5 @@ export const themes: Record<string, { grad: string; mark: string }> = {
   rust: { grad: 'linear-gradient(135deg,#c2410c,#fb923c)', mark: 'Rs' },
   lua: { grad: 'linear-gradient(135deg,#1e3a8a,#6366f1)', mark: 'Lua' },
   elixir: { grad: 'linear-gradient(135deg,#6d28d9,#c084fc)', mark: 'Ex' },
+  'ai-basics': { grad: 'linear-gradient(135deg,#0f766e,#22d3ee)', mark: 'AI' },
 };
