@@ -14,6 +14,7 @@ export default function Header() {
           <Link href="/courses">{t('courses')}</Link>
           <Link href="/ai">{lang === 'ar' ? 'الذكاء الاصطناعي' : 'AI'}</Link>
           <Link href="/pricing">{lang === 'ar' ? 'الخطط' : 'Plans'}</Link>
+          {user && <Link href="/members">{lang === 'ar' ? 'الأعضاء' : 'Members'}</Link>}
           {user && <Link href="/dashboard">{lang === 'ar' ? 'لوحتي' : 'My learning'}</Link>}
           <button type="button" className="chip" onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')} aria-label="language">{lang === 'ar' ? 'English' : 'العربية'}</button>
           {user ? <button type="button" className="link-btn" onClick={signOut}>{t('logout')}</button> : <Link href="/login" className="btn primary sm">{t('login')}</Link>}
