@@ -1,4 +1,5 @@
 import type { Lesson, Ex } from './lessons';
+import { dataLessons, dataExercises } from './lessons-data';
 // Original lesson drafts (Egyptian Arabic + English). Written from scratch, no copied material.
 const L = (ar: string[], en: string[], code: string, qa: string, qe: string, options: string[], answer: number): Lesson => ({ ar, en, code, q: { ar: qa, en: qe, options, answer } });
 
@@ -69,9 +70,10 @@ const htmlCss: Lesson[] = [
     `<meta name="viewport" content="width=device-width, initial-scale=1">\n\n@media (min-width: 768px) {\n  .grid { grid-template-columns: 1fr 1fr; }\n}`, 'إيه اللي بيخلي التنسيق يتغير حسب عرض الشاشة؟', 'What changes styles by screen width?', ['media query', 'alert', 'console', 'doctype'], 0),
 ];
 
-export const extraLessons: Record<string, Lesson[]> = { 'data-analyst': dataAnalyst, sql, git, 'html-css': htmlCss };
+export const extraLessons: Record<string, Lesson[]> = { 'data-analyst': dataAnalyst, sql, git, 'html-css': htmlCss, ...dataLessons };
 
 export const extraExercises: Record<string, Record<number, Ex>> = {
+  ...dataExercises,
   'data-analyst': {
     0: { ar: 'اكتب أول خطوة (بالإنجليزي).', en: 'Write the first step.', code: '1. ___ the question', answer: 'ask' },
     1: { ar: 'اكتب الدالة اللي بتجمع.', en: 'Write the function that adds.', code: '=___(B2:B100)', answer: 'SUM' },

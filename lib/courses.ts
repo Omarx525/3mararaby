@@ -26,6 +26,12 @@ export const courses: Course[] = [
     lessons: [['أول commit', 'Your first commit'], ['الحالة والتاريخ', 'Status and history'], ['الفروع', 'Branches'], ['GitHub وPull Request', 'GitHub and Pull Requests']] },
   { id: 'html-css', ar: 'HTML وCSS', en: 'HTML and CSS', kind: 'known', level: 'beginner', hours: 5, descAr: 'اعمل صفحة ويب شكلها حلو وتشتغل على الموبايل.', descEn: 'Build a good-looking web page that works on mobile.',
     lessons: [['هيكل الصفحة', 'Page structure'], ['التنسيق بـ CSS', 'Styling with CSS'], ['Flexbox', 'Flexbox'], ['الموبايل والاستجابة', 'Mobile and responsive design']] },
+  { id: 'excel', ar: 'إكسل وGoogle Sheets للتحليل', en: 'Excel and Google Sheets for analysis', kind: 'data', level: 'beginner', hours: 7, descAr: 'من المراجع والجداول المحورية لحد تقرير جاهز.', descEn: 'From references and pivot tables to a finished report.',
+    lessons: [['الخلايا والمراجع', 'Cells and references'], ['دوال بتوفر وقتك', 'Functions that save time'], ['الجدول المحوري', 'Pivot tables'], ['تنضيف البيانات في الشيت', 'Cleaning data in the sheet'], ['الشارتات والتنسيق الشرطي', 'Charts and conditional formatting'], ['مشروع: تقرير مبيعات', 'Project: a sales report']] },
+  { id: 'statistics', ar: 'إحصاء للمحللين', en: 'Statistics for analysts', kind: 'data', level: 'beginner', hours: 5, descAr: 'المتوسط والتشتت والعينة والارتباط من غير تعقيد.', descEn: 'Mean, spread, samples and correlation without the jargon.',
+    lessons: [['المتوسط والوسيط والمنوال', 'Mean, median and mode'], ['التشتت والانحراف المعياري', 'Spread and standard deviation'], ['التوزيع الطبيعي', 'The normal distribution'], ['العينة والانحياز', 'Samples and bias'], ['الارتباط مش السببية', 'Correlation is not causation']] },
+  { id: 'data-viz', ar: 'التصور البياني بـ Python', en: 'Data visualization with Python', kind: 'data', level: 'beginner', hours: 6, descAr: 'ارسم بياناتك بـ matplotlib وpandas وطلّع تقرير بصري.', descEn: 'Plot your data with matplotlib and pandas and produce a visual report.',
+    lessons: [['أول رسم بـ matplotlib', 'Your first plot'], ['تختار الشارت الصح', 'Choosing the right chart'], ['العناوين والمحاور', 'Titles and axes'], ['من pandas لرسم جاهز', 'From pandas to a ready plot'], ['مشروع: تقرير بصري', 'Project: a visual report']] },
 ];
 
 export const getCourse = (id: string) => courses.find((c) => c.id === id);

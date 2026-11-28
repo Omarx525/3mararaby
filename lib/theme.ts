@@ -10,4 +10,7 @@ export const themes: Record<string, { grad: string; mark: string }> = {
   sql: { grad: 'linear-gradient(135deg,#0e7490,#67e8f9)', mark: 'SQL' },
   git: { grad: 'linear-gradient(135deg,#b91c1c,#f87171)', mark: 'Git' },
   'html-css': { grad: 'linear-gradient(135deg,#be185d,#f9a8d4)', mark: 'Web' },
+  excel: { grad: 'linear-gradient(135deg,#15803d,#4ade80)', mark: 'XL' },
+  statistics: { grad: 'linear-gradient(135deg,#6d28d9,#a78bfa)', mark: 'Σ' },
+  'data-viz': { grad: 'linear-gradient(135deg,#4338ca,#818cf8)', mark: 'Viz' },
 };
