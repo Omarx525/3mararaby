@@ -13,7 +13,7 @@ const dict = {
   browse: ['شوف الدورات', 'Browse courses'],
   how: ['كيف يشتغل', 'How it works'],
   step1: ['اختار دورة.', 'Pick a course.'], step2: ['خلّص الدروس والتمارين والاختبارات.', 'Finish the lessons, exercises and quizzes.'], step3: ['استلم شهادة برقم تحقق تقدر تنزلها.', 'Get a certificate with a verification number you can download.'],
-  known: ['معروفة', 'Well known'], rare: ['أقل شهرة', 'Less known'], ai: ['ذكاء اصطناعي', 'AI'], beginner: ['مبتدئ', 'Beginner'], intermediate: ['متوسط', 'Intermediate'],
+  known: ['معروفة', 'Well known'], rare: ['أقل شهرة', 'Less known'], ai: ['ذكاء اصطناعي', 'AI'], data: ['بيانات', 'Data'], beginner: ['مبتدئ', 'Beginner'], intermediate: ['متوسط', 'Intermediate'],
   lessons: ['الدروس', 'Lessons'], lessonsWord: ['درس', 'lessons'], hours: ['ساعات', 'hours'], progress: ['تقدمك', 'Your progress'],
   tryIt: ['جرّب بنفسك', 'Try it yourself'], fillIn: ['اكتب الجزء الناقص مكان ___', 'Type what replaces ___'], run: ['شغّل', 'Run'],
   correct: ['تمام، صح', 'Correct'], notYet: ['لسه مش مظبوط', 'Not yet'], quiz: ['اختبار قصير', 'Quick quiz'], check: ['تحقق', 'Check'],

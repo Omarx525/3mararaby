@@ -104,7 +104,8 @@ const ai: Lesson[] = [
     ['AI can be wrong and invent facts with confidence. Check anything important elsewhere.', 'Never type passwords, bank details or secrets into it.'],
     '# قاعدة بسيطة\nراجع المهم · ما تشاركش أسرار', 'إيه اللي ما تكتبوش لأداة ذكاء اصطناعي؟', 'What should you never type into an AI tool?', ['كلمة السر', 'سؤال عن درس', 'اسم لغة برمجة', 'طلب ملخص'], 0),
 ];
-export const lessonsByCourse: Record<string, Lesson[]> = { python, javascript, c, rust, lua, elixir, 'ai-basics': ai };
+import { extraLessons, extraExercises } from './lessons-extra';
+export const lessonsByCourse: Record<string, Lesson[]> = { python, javascript, c, rust, lua, elixir, 'ai-basics': ai, ...extraLessons };
 
 export type Ex = { ar: string; en: string; code: string; answer: string };
 export const exercises: Record<string, Record<number, Ex>> = {
@@ -145,3 +146,4 @@ export const exercises: Record<string, Record<number, Ex>> = {
         3: { ar: 'اكتب الدالة اللي بتجمع عناصر القائمة.', en: 'Write the function that sums a list.', code: 'IO.puts(Enum.___([1, 2, 3]))', answer: 'sum' },
     },
 };
+Object.assign(exercises, extraExercises);
