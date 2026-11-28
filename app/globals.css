@@ -129,3 +129,16 @@ pre.code { background: #0f172a; color: #e2e8f0; border-radius: 12px; }
 .plan ul { padding-inline-start: 18px; margin: 4px 0 12px; flex: 1; }
 .tbl { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--hair); border-radius: 8px; }
 .tbl th, .tbl td { padding: 8px 12px; text-align: start; border-bottom: 1px solid var(--hair); font-size: 14px; }
+.install-bar { position: fixed; inset-inline: 12px; bottom: 12px; z-index: 50; display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: #fff; border: 1px solid var(--hair); border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,.12); }
+.install-bar span { flex: 1; font-size: 14px; }
+@media (display-mode: standalone) { .site-footer { display: none; } body { padding-bottom: env(safe-area-inset-bottom); } }
+/* Mobile overflow fixes */
+html, body { overflow-x: hidden; max-width: 100%; }
+img { max-width: 100%; }
+.hero-wrap > * { min-width: 0; }
+@media (max-width: 520px) {
+  .header-in { flex-wrap: wrap; justify-content: space-between; }
+  .site-header nav { flex-wrap: wrap; flex: 1 1 100%; justify-content: flex-start; row-gap: 0; }
+  .hero-h { font-size: 28px; }
+  .hero-text .btn, .hero-text .chip { flex: 1 1 auto; }
+}
